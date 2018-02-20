@@ -27,3 +27,27 @@ $(document).on("click", "#add-item", function() {
     var itemInput = $("#new-list-item");
     list.append("<li>" + itemInput.val() + " <button class='delete-item'>X</button></li>");
 });
+//
+//$(document).on("click", ".complete-item", function() {
+//    $('input:checkbox').on('change', function () {
+//        if (this).is(:checked) {
+//            $(this).parent().css('textdecoration', 'line-through');
+//        } else {
+//            $(this).parent().css('textDecoration', 'none');
+//        }
+//    })
+//});
+
+$(document).on("click", ".complete-item", function() {
+
+    if ($(this).is(':checked')) { // true if the input checkbox is checked
+        // console.log("entered if");
+        $(this).parent().css('text-decoration', 'line-through');
+        // in css, this would be: "text-decoration: line-through"
+    } else {
+        // console.log("entered else");
+        $(this).parent().css('text-decoration', 'none');
+        // in css, this would be: "text-decoration: none"
+    }
+});
+    
