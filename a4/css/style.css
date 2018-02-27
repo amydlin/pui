@@ -208,6 +208,10 @@ main#original div button {
     border: solid 0.5px #979797;
 }
 
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
 
 
 
