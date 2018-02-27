@@ -1,1 +1,214 @@
 @import 'reset.css';
+
+
+.imagelink {
+    
+}
+
+.imagelink:hover {
+    
+}
+
+.currentlink {
+    color: #F48BA9;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: .95rem;
+}
+
+nav {
+    padding-top: 1.5rem;
+}
+
+nav img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20rem;
+    margin-bottom: 1.5rem;
+}
+
+nav nav-bar {
+}
+
+nav nav-bar ul {
+    text-align: center;
+}
+
+nav nav-bar ul h2 {
+    display: inline-block;
+    padding-left: 10rem;
+    padding-top: 0.25rem;
+    border-top: solid 1px #000;
+    padding-bottom: 0.25rem;
+    border-bottom: solid 1px #000;
+    margin-right: -4px;
+}
+
+nav nav-bar ul h2:first-child {
+    padding-left: 0;
+}
+
+main {
+    display: inline-block;
+}
+
+#mainimg {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-top: 1.5rem;
+    width: 56rem;
+}
+
+main#allproducts {
+    margin-top: 1.5rem;
+}
+
+
+
+main sidebar ul {
+    border: solid 1px;
+    margin-left: 12rem;
+    float: left;
+    margin-bottom: 20rem;
+    margin-right: 1.5rem;
+}
+
+main sidebar ul h3 {
+    margin: 1rem 2rem;
+    font-weight: 300;
+}
+
+main sidebar ul h3:first-child {
+    margin: 1rem;
+}
+
+main h4 {
+    margin-bottom: 0.75rem;
+    font-weight: 300;
+    padding-left: 1.5rem;
+}
+
+main h4 a {
+    color: #000;
+}
+
+main full div {
+    float: left;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+main full div  a {
+    margin-top: -0.75rem;
+}
+
+main full div a img {
+    display: inline-block;
+    width: 13rem;
+    height: auto;
+}
+
+main full div h5 {
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+main#original {
+    margin-left: 12rem;
+    margin-top: 1.5rem;
+    float: left;
+}
+
+main#original img {
+/*    margin-left: 12rem;*/
+    margin-top: 1.5rem;
+    width: 30rem;
+    float: left;
+    margin-right: 2rem;
+}
+
+main#original div h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+
+main#original div p {
+    font-weight: 300;
+    margin-right: 17rem;
+    font-size: 0.9rem;
+}
+
+#rectangle{
+    width:5rem;
+    height:1.25rem;
+    background: #ffffff;
+    border: solid 0.5px #979797;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+main#original div h5 {
+    margin-top: 1rem;
+}
+
+main#original div div {
+/*    float: left;*/
+    display: inline-block;
+    width: 5rem;
+
+}
+
+main#original div div {
+    text-align: center;
+    font-weight: 1000;
+    margin-right: 1rem;
+}
+
+main#original div div div {
+    width:5rem;
+    height:1.25rem;
+    background: #ffffff;
+    border: solid 0.5px #979797;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+main#original div div div.picked {
+    background: #FFF3F3;
+}
+
+main#original div h1#price {
+    float: left;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+main#original div button {
+    background-color: #FFF3F3; /* Green */
+    border: none;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: left;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: solid 0.5px #979797;
+}
+
+
+
+
+
