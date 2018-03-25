@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Bun Bun Bake Shop</title>
+        <meta charset="utf-8">
+        <meta name="keywords" contents="">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </head>
+    
+    <body id="original">
+        <header>
+           <nav>
+               <a href="index.html"><img src="images/main.png"></a>
+               <nav-bar>
+                   <ul>
+                       <h2 class = "currentlink"><a href="allproducts.html">cinnamon rolls</a></h2>
+                       <h2>cupcakes</h2>
+                       <h2>breads</h2>
+                       <h2>other baked goods</h2>
+                   </ul>
+               </nav-bar>
+           </nav>
+        </header>
+        <main id = "original">
+            <h4 class="currentlink">All Products <a>></a> <a href="allproducts.html">Cinnamon Rolls</a> <a>></a> Original Cinnamon Roll</h4>
+            <div id="button-image"></div>
+           <div>
+               <h1>Original Cinnamon Roll</h1>
+               <p>Try our world famous cinnamon roll! Fresh, soft, and scrumptious, this roll is the most satisfying and well-deserved after a long day.</p>
+               <h5>Glaze:</h5>
+               <form action="">
+                  <input type="radio" name="glaze" value="no-glaze" checked="checked" onchange="changeImage('no')"> No Glaze<br>
+                  <input type="radio" name="glaze" value="sugar-milk" onchange="changeImage('sugar')"> Sugar Milk<br>
+                  <input type="radio" name="glaze" value="vanilla-milk" onchange="changeImage('vanilla')"> Vanilla Milk<br>
+                  <input type="radio" name="glaze" value="double-chocolate" onchange="changeImage('chocolate')"> Double Chocolate                  
+               </form>
+               <h5>Count:</h5>
+               <form action="">
+                  <input type="radio" name="count" value="1" checked="checked" onchange="changePrice('1')"> 1<br>
+                  <input type="radio" name="count" value="3" onchange="changePrice('3')"> 3<br>
+                  <input type="radio" name="count" value="6" onchange="changePrice('6')"> 6<br>
+                  <input type="radio" name="count" value="12" onchange="changePrice('12')"> 12                  
+               </form>
+               <br>
+               <h1 id="price">$4.00</h1>
+               <br><br>
+               <a href="cart.html"><button type="button" id="add-to-cart" href="cart.html">add to shopping cart</button></a>
+            </div>
+            
+        </main>
+    </body>
+</html>
