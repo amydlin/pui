@@ -8,6 +8,9 @@
         <meta name="keywords" contents="">
         <meta name="description" content="">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/wishlist.js" type="text/javascript"></script>
     </head>
     
     <body>
@@ -28,8 +31,23 @@
            </nav>
         </header>
         <main>
-<!--           link to products-->
-            <a href="allproducts.html" class="imagelink" title="Twitter link"><img src="images/home1.png" id = 'mainimg'></a>
+            <div id="numWishlist"></div>
+<!--            checkout holds information about products in localstorage-->
+            <table id="wishlist">
+                <thead>
+                  <tr>
+                      <th>Roll</th>
+                      <th>Glaze</th>
+                      <th>Count</th>
+                      <th>Price</th>
+                      <th>Delete</th>
+                 </tr>
+             </thead>
+<!--            table holds information about products in cart-->
+             <tbody id="wishlistBody">
+
+             </tbody>
+    </table>
         </main>
     </body>
 </html>

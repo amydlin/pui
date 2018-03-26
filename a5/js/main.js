@@ -1,4 +1,4 @@
-//parses cart or initializes if doesn't yet exist'
+//parses cart or initializes if doesn't yet exist
 var cart = JSON.parse(localStorage.cart) || [];
 
 //gets cart from localStorage
@@ -7,7 +7,6 @@ function getCart() {
         if (localStorage.cart != null)
             {
                 cart = JSON.parse(localStorage.cart);
-                console.log(cart);
             }
     })
 }
@@ -41,7 +40,6 @@ function addToCart(roll, glaze, count, price) {
         Price: price
     };
     cart.push(item);
-    console.log(cart);
     saveCart();
     showCart();
 }
@@ -54,9 +52,11 @@ function saveCart() {
 //creates the html for the table of items in cart
 function createHTML() {
     cart = JSON.parse(localStorage.cart);
-    console.log(cart.length);
-    numProducts = "<h2>" + cart.length + " products in your cart </h2>";
-    document.getElementById("checkout").innerHTML = numProducts;
+    var numProducts = "<h2>" + cart.length + " products in your cart </h2>";
+    var elem = document.getElementById("checkout");
+    if(typeof elem !== 'undefined' && elem !== null) {
+        document.getElementById("checkout").innerHTML = numProducts;
+  }
     for (var i in cart) {
         var item = cart[i];
         var row = "<tr><td>" + item.Roll + "</br>" +  
@@ -69,12 +69,12 @@ function createHTML() {
     }
 }
 
-//calls on createHTML and can be added to to add elements
+//calls on createHTML and can be added to to add elements for cart
 function showCart() {
     createHTML();
 }
 
-//deletes item and resaves to localStorage to reflect changes
+//deletes item from cart and resaves to localStorage to reflect changes
 function deleteItem(index){
     cart.splice(index,1);
     $("#cartBody").empty();
@@ -134,6 +134,7 @@ $(document).ready(function() {
     }
     
     $("#add-to-cart").click(function() {
+        location.href="cart.html";
 //        pulls information for each item
         var glazes = document.getElementsByName("glaze");
         var counts = document.getElementsByName("count");
@@ -157,6 +158,7 @@ $(document).ready(function() {
         }
         
 //        adds to item to cart with grabbed information
+        getCart();
         addToCart(roll, glaze, count, price);
     });
     
