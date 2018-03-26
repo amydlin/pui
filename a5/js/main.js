@@ -1,5 +1,7 @@
+//parses cart or initializes if doesn't yet exist'
 var cart = JSON.parse(localStorage.cart) || [];
 
+//gets cart from localStorage
 function getCart() {
     $(function() {
         if (localStorage.cart != null)
@@ -10,7 +12,7 @@ function getCart() {
     })
 }
 
-
+//adds new item to local cart 
 function addToCart(roll, glaze, count, price) {
     getCart();
     if (glaze == "no-glaze") {
@@ -44,10 +46,12 @@ function addToCart(roll, glaze, count, price) {
     showCart();
 }
 
+//saves local cart to localStorage
 function saveCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+//creates the html for the table of items in cart
 function createHTML() {
     cart = JSON.parse(localStorage.cart);
     console.log(cart.length);
@@ -65,18 +69,20 @@ function createHTML() {
     }
 }
 
+//calls on createHTML and can be added to to add elements
 function showCart() {
     createHTML();
 }
 
+//deletes item and resaves to localStorage to reflect changes
 function deleteItem(index){
-//    $("#checkout").empty();
     cart.splice(index,1);
     $("#cartBody").empty();
     saveCart();
     showCart();
 }
 
+//changes the image of different glazes
 function changeImage(value) {
      switch(value) {
          case "no":
@@ -94,6 +100,7 @@ function changeImage(value) {
      }
 }
 
+//changes the price of different counts
 function changePrice(value) {
      switch(value) {
          case "1":
@@ -127,12 +134,12 @@ $(document).ready(function() {
     }
     
     $("#add-to-cart").click(function() {
-        console.log("clicked");
+//        pulls information for each item
         var glazes = document.getElementsByName("glaze");
         var counts = document.getElementsByName("count");
         var glaze = "";
         var count = -1;
-        var price = document.getElementById("price").innerHTML;
+        var price =  document.getElementById("price").innerHTML;
         var roll = "Original";
     
         for (var i = 0; i < glazes.length; i++) {
@@ -148,6 +155,8 @@ $(document).ready(function() {
                 break;
             }
         }
+        
+//        adds to item to cart with grabbed information
         addToCart(roll, glaze, count, price);
     });
     
