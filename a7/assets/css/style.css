@@ -4,6 +4,11 @@ html {
     font-family: 'Open Sans';
 }
 
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 /* unvisited link */
 a:link {
     color: #000000;
@@ -36,6 +41,11 @@ h2 {
 
 h3 {
     font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+    padding-bottom: 3rem;
 }
 
 p {
@@ -288,4 +298,5 @@ ul {
         padding-top: 1rem;
     }
 }
+
 
