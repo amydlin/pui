@@ -1,0 +1,291 @@
+
+/*overall style*/
+html {
+    font-family: 'Open Sans';
+}
+
+/* unvisited link */
+a:link {
+    color: #000000;
+}
+
+/* visited link */
+a:visited {
+    color: #000000;
+}
+
+/* mouse over link */
+a:hover {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+bold {
+    font-weight: 700;
+}
+
+/*style for nav*/
+
+body nav {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+body nav div#name h1 {
+    padding-left: 4rem;
+}
+
+body nav div h3 {
+    padding-top: 1.5rem;
+}
+
+body nav div#pages h3 {
+    float: left;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*style for main page*/
+
+body div#projects {
+    
+}
+
+body div#projects a img {
+    width: 45%;
+    padding: 1rem 1rem;  
+    display: block;
+/*    padding: 0 0;*/
+    float: left;
+}
+
+/*style for product1 page*/
+
+body div#project1 h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+body div#project1 p {
+    padding-top: .5rem;
+    padding-bottom: 3rem;
+}
+
+body div#project1 img {
+    border: #ccc solid 1px;
+    margin-bottom: 3rem;
+}
+
+body div#project1 div#block {
+    display: inline-block;
+}
+
+body div#project1 div#block p {
+    padding-top: 2rem;
+}
+
+body div#project1 div#block2 {
+    display: inline-block;
+}
+
+body div#project1 div#block2 h3 {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+body div#project1 div#block2 p {
+    padding-top: -1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* style for project 2 */
+
+body div#project2 div#myCarousel {
+    margin-top: 2.5rem;
+}
+
+body div#project2 div#myCarousel div.carousel-inner div.item {
+    padding-bottom: 1rem;
+}
+
+body div#project2 div#myCarousel div.carousel-inner div.item  p {
+    color: #777777;
+    text-shadow: none;
+}
+
+body div#project2 p {
+    padding-top: 1rem;
+}
+
+
+/*style for about page*/
+
+body div#about div#block {
+    padding-top: 3rem;
+} 
+
+.container {
+	background-color: #eee;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.center {
+	position: relative;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+ul {
+	padding-left: 20px;
+}
+
+.leftMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    background-color: #eee;
+}
+
+.mainContent {
+    position: relative;
+    margin-left: 300px;
+}
+
+
+.outer {
+	text-align: center;
+}
+
+.outer img {
+    padding-top: 2rem;
+}
+
+.inner {
+	width: 120px;
+	height: 120px;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.loner {
+	width: 100px;
+	height: 100px;
+}
+
+.mini {
+	width: 60px;
+	height: 60px;
+}
+
+.red {
+	background-color: #e25555;
+}
+
+.green {
+	background-color: #55e255;
+}
+
+.orange {
+	background-color: #ffccaa
+}
+
+.fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.relative {
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+
+.absolute {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+@media screen and (max-width: 500px) {
+    
+/*    nav*/
+    
+    body nav {
+        padding-bottom: 0rem;
+    }
+    
+    body nav div#name h1 {
+        text-align: center;
+        float: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    
+    body nav div#pages h3 {
+        float: none;
+        text-align: center;
+        padding-bottom: 0rem;
+        padding-top: 0.5rem;
+    }
+    
+    body div#project1 img {
+        margin-bottom: 1rem;
+    }
+    
+    body div#project1 div#block p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    body div#project1 div#block h3 {
+        padding-top: 1rem;
+    }
+}
+
