@@ -8,6 +8,3 @@ function change() // no ';' here
     if (elem.value=="see more +") elem.value = "see less -";
     else elem.value = "see more +";
 }
-
-
-$('.parallax-window').parallax({imageSrc: '/assets/images/project1.png'});
